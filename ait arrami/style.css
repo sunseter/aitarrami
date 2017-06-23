@@ -1,0 +1,279 @@
+/*
+Theme Name: Aitarrami
+Theme URI: http://dasargashi.com/aitarrami
+Author: Dasar Gashi
+Author URI: http://dasargashi.com/
+Description: A beautiful, custom Wordpress Theme exclusively for Aitarrami
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aitarrami
+Tags: two-columns
+*/
+
+html, body, ul {
+	margin: 0;
+	padding: 0;
+
+	
+}
+
+body {
+	position: relative;
+	padding-bottom: 60px;
+	min-height: 100%;
+}
+
+div[id^=attach] {
+	width: auto !important;
+}
+
+* {
+	font-family: 'Proxima Nova';
+}
+
+.main_content a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.sub-menu li{
+    display: none;
+    /* width: 100%; */
+    background: black;
+    float: none;
+    clear: both;
+    color: white;
+}
+
+.sub-menu li a {
+	color: white;
+}
+
+.sub-menu li:hover a {
+	color: black !important;
+}
+
+.sub-menu li a:hover {
+	color: black;
+}
+
+#menu-main-menu li:hover > .sub-menu li {
+		display: block;
+		color: white;
+}
+
+#menu-main-menu li:hover > .sub-menu li a {
+	color: white;
+}
+#menu-main-menu li {
+	list-style-type: none;
+	float: left;
+	padding: 0 15px;
+	line-height: 50px;
+}
+
+nav a {
+	text-decoration: none;
+    color: white;
+}
+
+#menu-main-menu {
+	float: right;
+	padding-right: 50px;
+}
+
+.post_info {
+	font-size: 0.65em;
+	font-style: italic;
+}
+
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+header nav {
+	background-color: black;
+	height: 50px;
+	box-shadow: 0px 0px 10px black;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 999;
+}
+
+header nav li {
+	height: 50px;
+	cursor: pointer;
+}
+
+.icon {
+	display: none;
+}
+
+header nav > li:first-of-type a, header nav > li:first-of-type {
+	float: left;
+	color: white;
+	font-family: 'Proxima Nova';
+	padding-left: 50px;
+	list-style-type: none;
+	font-size: 1.4em;
+	line-height: 50px;
+	text-decoration: none;
+	transition: all 400ms ease-in;
+}
+
+header nav li:hover {
+	background: white;
+	transition: all 400ms ease-in;
+	color: black;
+}
+
+header nav li:hover a {
+	color: black;
+}
+
+header a:hover {
+	color: black;
+	transition: all 400ms ease-in;
+}
+
+.full_width {
+	width: 100%;
+	height: 90vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85)), url(http://thenie.org/aitarrami/wp-content/themes/aitarrami/images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	display: table;
+	text-align: center;
+	text-shadow: 0px 0px 10px black;
+	position: relative;
+}
+
+.full_width i {
+	position: absolute;
+	font-size: 3.5em;
+	bottom: 10px;
+}
+
+.full_width a {
+	color: white;
+	font-weight: 900;
+}
+
+.main_content {
+	width: calc(75% - 80px);
+	padding: 15px 40px;
+	float: left;
+}
+
+.full_width_inner {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+	animation: fadein 2.5s 2s 1 ease-in-out backwards;
+}
+
+.full_width_container p, .full_width_container h1 {
+	color: white;
+	font-family: 'Proxima Nova';
+}
+
+.sidebar {
+	width: calc(25% - 20px);
+	float: left;
+	background: black;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
+
+.sidebar a {
+	color: white;
+}
+
+footer {
+	width: calc(100% - 30px);
+	height: 40px;
+	background-color: black;
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	line-height: 40px;
+	box-shadow: 0px 0px 10px black;
+	padding: 0 15px;
+}
+
+.post_list img {
+	max-width: 90%;
+	height: auto;
+	padding: 15px 5%;
+	border-radius: 7px;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.read_more {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	background-color: black;
+	border-radius: 3px;
+	text-align: center;
+	color: white;
+	border: 0;
+	cursor: pointer;
+}
+
+#sidebar > ul {
+	list-style-type: none;
+}
+
+@media (max-width: 900px) {
+	.sidebar {
+		display: none;
+	}
+
+	.main_content {
+		width: calc(100% - 80px);
+	}
+	.menu-main-menu-container {
+	display: none;
+}
+		.icon {
+			display: inline-block;
+		}
+
+		header nav > li:first-of-type a, header nav > li:first-of-type {
+  
+    padding-left: 5px;
+    font-size: 1em;
+
+}
+
+#menu-main-menu {
+	width: 100%;
+	background-color: black;
+	padding: 0;
+}
+
+#menu-main-menu li {
+	width: calc(100% - 30px);
+}
+
+.sub-menu {
+	display: none;
+}
+}
+
+.icon {
+	float: right;
+    color: white;
+    list-style-type: none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+}
